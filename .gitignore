@@ -1,2 +1,7 @@
 node_modules/
-/.metadata/
+.metadata/
+*.class
+build/**/*
+UofTHacks/build/
+*.pyc
+/backend/uofthacks/index/lib/
