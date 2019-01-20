@@ -55,7 +55,7 @@ def analysis_text(content):
 def main():
 
 
-        sentiment, entities = analysis_text(r[20])
+        sentiment, entities = analysis_text(r[0])
         print(sentiment.score, sentiment.magnitude)
         ename = []
         etype = []
