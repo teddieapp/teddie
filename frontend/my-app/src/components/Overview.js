@@ -39,6 +39,7 @@ const A_WEEK_OLD = REFERENCE.clone()
 
 const averageSentiment = (values, query) => {
   let weekValues = values.filter(query).map(v => v.sentiment);
+  if (weekValues.length === 0) return 0;
   return mean(weekValues);
 };
 
@@ -70,7 +71,9 @@ const Overview = props => {
                     Overall, you felt{" "}
                     {isAveraglyNegative(
                       averageSentiment(values, v =>
-                        moment(v.date).isAfter(A_WEEK_OLD)
+                        moment.unix(v.date)
+                        .isBetween(A_WEEK_OLD, REFERENCE)
+                        
                       )
                     ) ? (
                       <span style={{ color: "red", fontWeight: "bold" }}>

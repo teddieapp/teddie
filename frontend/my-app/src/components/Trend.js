@@ -21,6 +21,7 @@ import Card from "@material-ui/core/Card";
 import { CardContent, CardHeader } from "@material-ui/core";
 import FirebaseAdapter from "./FirebaseAdapter";
 import moment from 'moment';
+import * as d3 from 'd3';
 import { mean } from 'mathjs';
 
 const useStyles = makeStyles(theme => ({
@@ -29,12 +30,18 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const REFERENCE = moment(); // fixed just for testing, use moment();
-const A_WEEK_OLD = REFERENCE.clone().subtract(7, 'days').startOf('day');
+const REFERENCE = moment().endOf('day'); // fixed just for testing, use moment();
+const A_YEAR_OLD = REFERENCE.clone().subtract(1, 'year').startOf('day');
+const A_WEEK_OLD = REFERENCE.clone().subtract(1, 'week').startOf('day');
 
+const now = new Date();
+const domainToday = d3.scaleTime().domain([d3.timeWeek.floor(now), d3.timeDay.ceil(now)]);
+const timeFormatter = (tick) => {return d3.timeFormat('%H:%M:%S')(new Date(tick));};
+const ticks = domainToday.ticks(d3.timeDay.every(1));
 
 const averageSentiment = (values, query) => {
     let weekValues = values.filter(query).map(v => v.sentiment);
+    if (weekValues.length == 0) return 0;
     return mean(weekValues)
 }
 
@@ -68,7 +75,7 @@ const Trend = props => {
                       <ScatterChart
                         width={width}
                         height={300}
-                        data={values.filter(v => moment(v.date).isAfter(A_WEEK_OLD))} 
+                        // data={values.filter(v => moment(v.date).isAfter(A_YEAR_OLD))} 
                         margin={{ top: 5, right: 20, left: 20, bottom: 5 }}
                       >
                         <defs>
@@ -110,7 +117,16 @@ const Trend = props => {
                           </linearGradient>
                         </defs>
 
-                        <XAxis interval={moment.duration(1, 'day').asMilliseconds()} dataKey = 'date' domain = {['auto', 'auto']}  type = 'number' tickFormatter = {(unixTime) => moment(unixTime).format('ddd')}/>
+                        <XAxis dataKey = 'date' 
+                            // domain={domainToday}
+                            tickCount={9}
+                            domain={[A_WEEK_OLD.unix(), REFERENCE.unix()]}  
+                            type = 'number' 
+                            allowDataOverflow
+                            // interval={0}
+                            allowDecimals={true}
+                            tickInterval={moment.duration(1, 'day').asSeconds()}
+                            tickFormatter = {(unixTime) => moment.unix(unixTime).format('ddd')}/>
                     	<YAxis hide={true} type="number" domain = {[-1, 1]}  dataKey={'sentiment'} name='Happiness'/>
 
                         <ReferenceLine y={0} stroke="grey" strokeDasharray="3 3" />
@@ -118,7 +134,7 @@ const Trend = props => {
                         {/* <Tooltip /> */}
                         {/* <Legend /> */}
                         <Scatter name='sentiment'
-                            data={values.filter(v => moment(v.date).isAfter(A_WEEK_OLD))} 
+                            data={values} 
                             fill="#82ca9d"
                             line={{stroke: 'url(#colorUv)', strokeWidth: 2}}
                             shape="circle"/>
@@ -128,7 +144,7 @@ const Trend = props => {
                   )}
                 </Measure>
                 <Typography paragraph>
-                  Overall, you felt { isAveraglyNegative(averageSentiment(values, v => moment(v.date).isAfter(A_WEEK_OLD))) ? <span style={{color: 'red', fontWeight: "bold"}}>bad</span> 
+                  Overall, you felt { isAveraglyNegative(averageSentiment(values, v => moment.unix(v.date).isBetween(A_WEEK_OLD, REFERENCE))) ? <span style={{color: 'red', fontWeight: "bold"}}>bad</span> 
                   : <span style={{color: 'green',  fontWeight: "bold"}}>good</span> } this past week.
                 </Typography>
               </div>
