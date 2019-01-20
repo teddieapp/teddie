@@ -5,7 +5,7 @@ import { useList, useListKeys, useObject } from 'react-firebase-hooks/database';
 import firebase from 'firebase';
 
 const parseDate = dateString => {
-    const [year, month, date, hours, minutes, seconds] = dateString.split(',').map(s => Number(s));
+    const [year, month, date, hours, minutes, seconds] = (dateString||"").split(',').map(s => Number(s));
     return new Date(year, month, date, hours, minutes, seconds, 0);
 }
 
