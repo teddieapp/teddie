@@ -30,6 +30,14 @@ const DrawerMenu = ({ classes }) => {
             <ListItemText primary="Trend" />
           </ListItem>
         </Link>
+        <Link to="/moods">
+          <ListItem button key="Moods">
+            <ListItemIcon>
+              <InboxIcon />
+            </ListItemIcon>
+            <ListItemText primary="Moods" />
+          </ListItem>
+        </Link>
       </List>
       <Divider />
       {/* <List>

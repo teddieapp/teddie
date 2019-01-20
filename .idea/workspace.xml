@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d9a1af8-15f7-4d8c-b5d2-4f9670a2d261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/uofthacks/indexx/toneAnalyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uofthacks/indexx/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uofthacks/indexx/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

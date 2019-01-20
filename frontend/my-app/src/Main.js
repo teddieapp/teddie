@@ -15,6 +15,8 @@ import { Router } from "@reach/router";
 import Trend from "./components/Trend";
 import Overview from "./components/Overview";
 
+import Moods from "./components/Moods"
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles(
@@ -68,6 +70,11 @@ const TrendHeader = props => (
     Trend
   </Typography>
 );
+const MoodsHeader = props => (
+  <Typography variant="h6" color="inherit" noWrap>
+    Moods
+  </Typography>
+);
 
 const Main = props => {
   const { container } = props;
@@ -96,6 +103,7 @@ const Main = props => {
           <Router>
             <OverviewHeader path="/" />
             <TrendHeader path="/trend" />
+            <MoodsHeader path = "/moods"/>
           </Router>
         </Toolbar>
       </AppBar>
@@ -135,6 +143,7 @@ const Main = props => {
         <Router>
           <Overview path="/" />
           <Trend path="/trend" />
+          <Moods path="/moods" />
         </Router>
       </main>
     </div>
