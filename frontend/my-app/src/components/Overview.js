@@ -23,6 +23,8 @@ import FirebaseAdapter from "./FirebaseAdapter";
 import moment from "moment";
 import { mean } from "mathjs";
 
+import Bear from "./CornerBear"
+
 const useStyles = makeStyles(theme => ({
   overviewContainer: {
     display: "flex"
@@ -105,6 +107,7 @@ const Overview = props => {
                 </div>
               </CardContent>
             </Card>
+            <Bear/>
           </div>
         );
       }}
