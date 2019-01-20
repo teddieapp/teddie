@@ -54,15 +54,13 @@ def analysis_text(content):
 
 def main():
 
-    for i in range(1, 50):
-        sentiment, entities = analysis_text(r[i])
+
+        sentiment, entities = analysis_text(r[20])
         print(sentiment.score, sentiment.magnitude)
         ename = []
         etype = []
         esal = []
-
-
-        date = randDate(time.strftime("%Y,%m,%d,%H,%M,%S"), "2020,01,19,19,06,3", "%Y,%m,%d,%H,%M,%S", random.random())
+        date = time.strftime("%Y,%m,%d,%H,%M,%S")
 
         dcounter = 0
         did = db.child("data").get()
