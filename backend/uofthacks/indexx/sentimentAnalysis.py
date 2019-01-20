@@ -50,9 +50,9 @@ def analysis_text(content):
     return sentiment, entities
 
 def main():
-    for i in range(0,50):
+    for i in range(0,10):
         sentiment, entities = analysis_text(r[counter])
-        counter++
+
         print(sentiment.score, sentiment.magnitude)
 
         date = time.strftime("%Y,%m,%d,%H,%M,%S")
