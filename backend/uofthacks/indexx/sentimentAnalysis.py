@@ -7,6 +7,7 @@ import six
 import datetime
 import json
 
+
 with open ("textfile.txt", "r") as readfile:
     r = readfile.readlines()
 
