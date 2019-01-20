@@ -13,6 +13,8 @@ import { makeStyles, useTheme } from "@material-ui/styles";
 import DrawerMenu from "./components/DrawerMenu";
 import { Router } from "@reach/router";
 import Trend from "./components/Trend";
+import Overview from "./components/Overview";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles(
@@ -30,7 +32,11 @@ const useStyles = makeStyles(
       marginLeft: drawerWidth,
       [theme.breakpoints.up("md")]: {
         width: `calc(100% - ${drawerWidth}px)`
-      }
+      },
+    },
+    toolBarBg: {
+      background: "linear-gradient(45deg, #bf360c 30%, #ad1457 90%)"
+
     },
     menuButton: {
       marginRight: 20,
@@ -51,11 +57,10 @@ const useStyles = makeStyles(
   { options: { withTheme: true } }
 );
 
-const Overview = props => <Typography paragraph>Overview</Typography>;
 
 const OverviewHeader = props => (
   <Typography variant="h6" color="inherit" noWrap>
-    Overview
+    Teddie
   </Typography>
 );
 const TrendHeader = props => (
@@ -79,7 +84,7 @@ const Main = props => {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
+        <Toolbar className={classes.toolBarBg}>
           <IconButton
             color="inherit"
             aria-label="Open drawer"

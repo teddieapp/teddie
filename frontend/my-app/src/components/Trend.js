@@ -11,6 +11,7 @@ import {
   YAxis,
   Tooltip,
   ReferenceArea,
+  ComposedChart,
   ReferenceLine
 } from "recharts";
 import Measure from "react-measure";
@@ -20,16 +21,7 @@ import Card from "@material-ui/core/Card";
 import { CardContent, CardHeader } from "@material-ui/core";
 import FirebaseAdapter from "./FirebaseAdapter";
 import moment from 'moment';
-
-const data = [
-  { name: "Sun", uv: 4000, pv: 2400, amt: 2400 },
-  { name: "Mon", uv: 3000, pv: 1398, amt: 2210 },
-  { name: "Tue", uv: 2000, pv: 9800, amt: 2290 },
-  { name: "Wed", uv: 2780, pv: 3908, amt: 2000 },
-  { name: "Thu", uv: 1890, pv: 4800, amt: 2181 },
-  { name: "Fri", uv: 2390, pv: 3800, amt: 2500 },
-  { name: "Sat", uv: 3490, pv: 4300, amt: 2100 }
-];
+import { mean } from 'mathjs';
 
 const useStyles = makeStyles(theme => ({
   chart: {
@@ -37,7 +29,18 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const REFERENCE = moment(); // fixed just for testing, use moment();
+const A_WEEK_OLD = REFERENCE.clone().subtract(7, 'days').startOf('day');
 
+
+const averageSentiment = (values, query) => {
+    let weekValues = values.filter(query).map(v => v.sentiment);
+    return mean(weekValues)
+}
+
+const isAveraglyNegative = average => {
+    return average < 0;
+}
 const Trend = props => {
   const [width, setWidth] = React.useState(0);
   const classes = useStyles();
@@ -50,7 +53,7 @@ const Trend = props => {
           <Card>
             <CardHeader
               title="How you felt this week"
-              subheader="January 19, 2019"
+              subheader={moment().format("dddd, MMMM Do YYYY")}
             />
             <CardContent>
               <div>
@@ -62,11 +65,11 @@ const Trend = props => {
                 >
                   {({ measureRef }) => (
                     <div ref={measureRef} className={classes.chart}>
-                      <LineChart
+                      <ScatterChart
                         width={width}
                         height={300}
-                        data={values}
-                        margin={{ top: 5, right: 10, left: 10, bottom: 5 }}
+                        data={values.filter(v => moment(v.date).isAfter(A_WEEK_OLD))} 
+                        margin={{ top: 5, right: 20, left: 20, bottom: 5 }}
                       >
                         <defs>
                           <linearGradient
@@ -77,12 +80,12 @@ const Trend = props => {
                             y2="1"
                           >
                             <stop
-                              offset="5%"
+                              offset="10%"
                               stopColor="#8884d8"
                               stopOpacity={1}
                             />
                             <stop
-                              offset="95%"
+                              offset="90%"
                               stopColor="#f48042"
                               stopOpacity={1}
                             />
@@ -107,28 +110,26 @@ const Trend = props => {
                           </linearGradient>
                         </defs>
 
-                        <XAxis dataKey = 'date' domain = {['auto', 'auto']}  type = 'number' tickFormatter = {(unixTime) => moment(unixTime).format('ddd')}/>
-                    	<YAxis type="number" domain = {[-1, 1]}  dataKey={'sentiment'} name='Happiness'/>
-                        <Line type="monotone" dataKey="sentiment" stroke="url(#colorUv)" activeDot={{r: 8}}/>
+                        <XAxis interval={moment.duration(1, 'day').asMilliseconds()} dataKey = 'date' domain = {['auto', 'auto']}  type = 'number' tickFormatter = {(unixTime) => moment(unixTime).format('ddd')}/>
+                    	<YAxis hide={true} type="number" domain = {[-1, 1]}  dataKey={'sentiment'} name='Happiness'/>
 
                         <ReferenceLine y={0} stroke="grey" strokeDasharray="3 3" />
 
                         {/* <Tooltip /> */}
                         {/* <Legend /> */}
-                        {/* <Scatter name='A school' data={values} fill='#8884d8' line shape="cross"/> */}
-                      </LineChart>
+                        <Scatter name='sentiment'
+                            data={values.filter(v => moment(v.date).isAfter(A_WEEK_OLD))} 
+                            fill="#82ca9d"
+                            line={{stroke: 'url(#colorUv)', strokeWidth: 2}}
+                            shape="circle"/>
+
+                      </ScatterChart>
                     </div>
                   )}
                 </Measure>
                 <Typography paragraph>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Overall, you felt { isAveraglyNegative(averageSentiment(values, v => moment(v.date).isAfter(A_WEEK_OLD))) ? <span style={{color: 'red', fontWeight: "bold"}}>bad</span> 
+                  : <span style={{color: 'green',  fontWeight: "bold"}}>good</span> } this past week.
                 </Typography>
               </div>
             </CardContent>

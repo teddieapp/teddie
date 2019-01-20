@@ -12,7 +12,7 @@ const parseDate = dateString => {
 const parseValue = value => {
     return {
         date: parseDate(value.date).getTime(),
-        sentiment: value.sentiment
+        sentiment: value.sentiment * 1.5
     }
 }
 const FirebaseAdapter = ({children}) => {
