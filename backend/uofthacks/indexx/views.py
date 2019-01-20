@@ -7,6 +7,7 @@ import random
 import six
 import pyrebase
 import time
+import json
 
 with open ("indexx/textfile.txt", "r") as readfile:
     r = readfile.readlines()
@@ -14,7 +15,19 @@ with open ("indexx/textfile.txt", "r") as readfile:
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
-        main()
+        try:
+            req_post = json.loads(request.body.decode())
+            try:
+                req = req_post.get('request').get('intent').get('slots').get('story').get('value')
+                # print(req)
+                if (req != None):
+                    main(req)
+            except:
+                print("BAD POST:")
+                print(json.loads(request.body.decode()))
+        except:
+            print("PLAIN TEXT")
+            print(request.body)
         return HttpResponse("Got it")
 
     return HttpResponse("Waiting for signal")
@@ -52,10 +65,12 @@ def analysis_text(content):
     entities = client.analyze_entities(document).entities
     return sentiment, entities
 
-def main():
+def main(story):
 
-
-        sentiment, entities = analysis_text(r[0])
+        if story == None:
+            return
+        print("Ready to analyze, story=", story)
+        sentiment, entities = analysis_text(story) # r[20])
         print(sentiment.score, sentiment.magnitude)
         ename = []
         etype = []

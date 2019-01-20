@@ -25,7 +25,7 @@ SECRET_KEY = '1(-8refe^gc)%=0@2mux@qc6fzt)(#j&2pe4qh&(ns$vnv)q(*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","0.0.0.0","127.0.0.1","34.73.135.170", "10.142.0.2"]
+ALLOWED_HOSTS = ["localhost","0.0.0.0","127.0.0.1","34.73.135.170", "10.142.0.2", "backend.teddieapp.com"]
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangosecure',
+    'sslserver',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +122,8 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/rain/uofthacksthing/backend/uofthacks/apikey.json"
+#SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+APPEND_SLASH=False
