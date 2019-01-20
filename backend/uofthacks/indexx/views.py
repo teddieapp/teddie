@@ -3,6 +3,7 @@ from google.cloud import language
 from google.cloud.language import enums
 from django.views.decorators.csrf import csrf_exempt
 
+import random
 import six
 import pyrebase
 import time
@@ -52,41 +53,50 @@ def analysis_text(content):
     return sentiment, entities
 
 def main():
-    sentiment, entities = analysis_text(r[counter])
-    print(sentiment.score, sentiment.magnitude)
 
-    ename = []
-    etype = []
-    esal = []
-
-    date = time.strftime("%Y,%m,%d,%H,%M,%S")
-    data = {'date':  date, 'sentiment': sentiment.score}
-    dcounter = 0
-    did = db.child("data").get()
-
-    if did is not None :
-        for a in did.each():
-            dcounter += 1
-
-    db.child("data").child("data"+str(dcounter)).set(data)
-    entitySet = []
-    ecounter = 0
-    for e in entities:
-        entity_type = enums.Entity.Type(e.type)
-        entity = []
-        entity.append(e.name)
-        entity.append(',')
-        entity.append(entity_type.name)
-        entity.append(',')
-        entity.append(str(e.salience))
-
-        entityStr = ''.join(entity)
-        entry = 'entry'  + str(ecounter)
-        endata = {entry: entityStr}
-
-        ecounter +=1
-        entitySet.append(endata)
-
-    db.child("data").child("data"+str(dcounter)).child("entities").set(entitySet)
+    for i in range(1, 50):
+        sentiment, entities = analysis_text(r[i])
+        print(sentiment.score, sentiment.magnitude)
+        ename = []
+        etype = []
+        esal = []
 
 
+        date = randDate(time.strftime("%Y,%m,%d,%H,%M,%S"), "2020,01,19,19,06,3", "%Y,%m,%d,%H,%M,%S", random.random())
+
+        dcounter = 0
+        did = db.child("data").get()
+        if did is not None:
+            for a in did.each():
+                dcounter += 1
+
+        data = {'date': date, 'sentiment': sentiment.score}
+        db.child("data").child("data"+str(dcounter)).set(data)
+        entitySet = []
+        ecounter = 0
+        for e in entities:
+            entity_type = enums.Entity.Type(e.type)
+            entity = []
+            entity.append(e.name)
+            entity.append(',')
+            entity.append(entity_type.name)
+            entity.append(',')
+            entity.append(str(e.salience))
+
+            entityStr = ''.join(entity)
+            entry = 'entry'  + str(ecounter)
+            endata = {entry: entityStr}
+
+            ecounter +=1
+            entitySet.append(endata)
+
+        db.child("data").child("data"+str(dcounter)).child("entities").set(entitySet)
+
+
+def randDate(start, end, format, prop):
+    stime = time.mktime(time.strptime(start,format))
+    etime = time.mktime(time.strptime(end,format))
+
+    ptime = stime + prop * (etime - stime)
+
+    return time.strftime(format, time.localtime(ptime))
