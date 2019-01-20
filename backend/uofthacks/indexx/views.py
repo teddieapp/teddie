@@ -12,7 +12,7 @@ with open ("indexx/textfile.txt", "r") as readfile:
 
 @csrf_exempt
 def index(request):
-    if request.method == 'POST':    
+    if request.method == 'POST':
         main()
         return HttpResponse("Got it")
 

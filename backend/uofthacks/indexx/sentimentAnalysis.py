@@ -2,6 +2,7 @@ from django.shortcuts import render
 from google.cloud import language
 from google.cloud.language import enums
 
+import time
 import pyrebase
 import six
 import datetime
@@ -51,14 +52,6 @@ def main():
     sentiment, entities = analysis_text(r[counter])
     print(sentiment.score, sentiment.magnitude)
 
-    ename = []
-    etype = []
-    esal = []
-
-
-
-
-    import time
     date = time.strftime("%Y,%m,%d,%H,%M,%S")
 
 
@@ -91,5 +84,4 @@ def main():
         entitySet.append(endata)
 
     db.child("data").child("data"+str(dcounter)).child("entities").set(entitySet)
-
 
