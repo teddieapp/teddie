@@ -8,3 +8,4 @@ UofTHacks/build/
 .idea/workspace.xml
 .idea/inspectionProfiles/Project_Default.xml
 .idea/inspectionProfiles/Project_Default.xml
+backend/uofthacks/uofthacks/__pycache__/
