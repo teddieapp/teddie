@@ -2,10 +2,253 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d9a1af8-15f7-4d8c-b5d2-4f9670a2d261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/uofthacks/index/sentimentAnalysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uofthacks/index/textfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uofthacks/index/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/apiclient/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/bin/pyrsa-decrypt.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/bin/pyrsa-encrypt.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/bin/pyrsa-keygen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/bin/pyrsa-priv2pub.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/bin/pyrsa-sign.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/bin/pyrsa-verify.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools-3.0.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/abc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/keys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/lfu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/lru.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/rr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/cachetools/ttl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/_cloud_sdk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/_default.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/_oauth2client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/_service_account_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/app_engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/compute_engine/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/compute_engine/_metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/compute_engine/credentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/credentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/crypt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/crypt/_cryptography_rsa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/crypt/_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/crypt/_python_rsa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/crypt/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/crypt/rsa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/environment_vars.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/iam.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/impersonated_credentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/jwt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/transport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/transport/_http_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/transport/grpc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/transport/requests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/auth/transport/urllib3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/oauth2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/oauth2/_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/oauth2/credentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/oauth2/id_token.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google/oauth2/service_account.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_api_python_client-1.7.7.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_api_python_client-1.7.7.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_api_python_client-1.7.7.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_api_python_client-1.7.7.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_api_python_client-1.7.7.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_api_python_client-1.7.7.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2-py3.7-nspkg.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/namespace_packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth-1.6.2.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2-0.0.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_auth_httplib2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_cloud-0.34.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_cloud-0.34.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_cloud-0.34.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_cloud-0.34.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/google_cloud-0.34.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/_auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/channel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/discovery.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/discovery_cache/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/discovery_cache/appengine_memcache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/discovery_cache/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/discovery_cache/file_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/http.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/mimeparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/sample_tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/googleapiclient/schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2-0.12.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2-0.12.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2-0.12.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2-0.12.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2-0.12.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2/cacerts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2/certs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2/iri2uri.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/httplib2/socks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1-0.4.5.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/ber/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/ber/decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/ber/encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/ber/eoo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/cer/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/cer/decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/cer/encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/der/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/der/decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/der/encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/native/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/native/decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/codec/native/encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/binary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/calling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/dateandtime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/integer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/octets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/compat/string.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/debug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/char.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/constraint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/namedtype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/namedval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/opentype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/tag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/tagmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/univ.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1/type/useful.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules-0.2.3.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/pem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc1155.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc1157.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc1901.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc1902.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc1905.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2251.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2314.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2315.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2437.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2459.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2511.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2560.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc2986.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3279.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3280.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3281.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3412.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3414.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3447.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc3852.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc4210.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc4211.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc5083.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc5084.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc5208.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc5280.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc5652.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/pyasn1_modules/rfc6402.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa-4.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/asn1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/cli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/key.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/machine_size.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/parallel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/pem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/pkcs1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/pkcs1_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/prime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/randnum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/transform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/rsa/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six-1.12.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six-1.12.0.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six-1.12.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six-1.12.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six-1.12.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six-1.12.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate-3.0.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate/template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/lib/uritemplate/variable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/sentimentAnalysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/textfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/index/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/uofthacks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uofthacks/uofthacks/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uofthacks/uofthacks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uofthacks/uofthacks/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,16 +260,17 @@
     <session id="-1190527307">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="14" />
+          <entry key="py" value="19" />
           <entry key="sentimentalAnaylsis" value="1" />
           <entry key="txt" value="1" />
           <entry key="txtfiles" value="1" />
@@ -35,19 +279,19 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="15" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1245" />
-          <entry key="txt" value="70" />
+          <entry key="py" value="3281" />
+          <entry key="txt" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="70" />
-          <entry key="Python" value="1245" />
+          <entry key="PLAIN_TEXT" value="71" />
+          <entry key="Python" value="3281" />
         </counts>
       </usages-collector>
     </session>
@@ -57,59 +301,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="e#633#665#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/sentimentAnalysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-                <marker date="1547927256444" expanded="true" signature="238:653" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/textfile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="109" lean-forward="true" selection-start-column="109" selection-end-column="109" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/settings.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="387">
+              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -117,8 +319,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/uofthacks/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="238">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/uofthacks/indexx/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/uofthacks/indexx/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,16 +367,19 @@
         <option value="$PROJECT_DIR$/backend/uofthacks/polls/migrations/urls.py" />
         <option value="$PROJECT_DIR$/backend/uofthacks/polls/views.py" />
         <option value="$PROJECT_DIR$/backend/uofthacks/polls/urls.py" />
-        <option value="$PROJECT_DIR$/backend/uofthacks/index/views.py" />
         <option value="$PROJECT_DIR$/backend/uofthacks/urls.py" />
-        <option value="$PROJECT_DIR$/backend/uofthacks/index/urls.py" />
-        <option value="$PROJECT_DIR$/backend/uofthacks/uofthacks/urls.py" />
+        <option value="$PROJECT_DIR$/backend/uofthacks/uofthacks/settings.py" />
         <option value="$PROJECT_DIR$/backend/uofthacks/index/textfile.txt" />
+        <option value="$PROJECT_DIR$/backend/uofthacks/index/urls.py" />
         <option value="$PROJECT_DIR$/backend/uofthacks/index/sentimentAnalysis.py" />
+        <option value="$PROJECT_DIR$/backend/uofthacks/index/__init__.py" />
+        <option value="$PROJECT_DIR$/backend/uofthacks/index/views.py" />
+        <option value="$PROJECT_DIR$/backend/uofthacks/uofthacks/urls.py" />
+        <option value="$PROJECT_DIR$/backend/uofthacks/indexx/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
     <option name="y" value="-15" />
     <option name="width" value="3235" />
@@ -184,7 +413,7 @@
               <item name="uofthacksthing" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="uofthacks" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="indexx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="uofthacksthing" type="b2602c69:ProjectViewProjectNode" />
@@ -209,6 +438,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\meteo\OneDrive\Documents\GitHub\uofthacksthing\backend\uofthacks\index" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\meteo\OneDrive\Documents\GitHub\uofthacksthing\backend\uofthacks" />
       <recent name="C:\Users\meteo\OneDrive\Documents\GitHub\uofthacksthing\backend\uofthacks\uofthacks" />
@@ -227,6 +459,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="uofthacksthing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/uofthacks/index" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/uofthacks/index/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.urls" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -241,9 +501,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="702" extended-state="7" />
+    <frame x="-6" y="-6" width="1293" height="702" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2527822" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32924694" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32924694" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2527822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -261,7 +540,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -270,89 +549,89 @@
     <entry file="file://$PROJECT_DIR$/backend/uofthacks/polls/views.py" />
     <entry file="file://$PROJECT_DIR$/backend/uofthacks/polls/urls.py" />
     <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/migrations/sentimentalAnaylsis" />
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/views.py">
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/views.py" />
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/models.py" />
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../../HackNYU/soap-master/python_scripts/getinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/txtfiles" />
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/sentimentAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/models.py">
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/textfile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="17">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../HackNYU/soap-master/python_scripts/getinfo.py">
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/indexx/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/txtfiles">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/uofthacks/uofthacks/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/textfile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="109" lean-forward="true" selection-start-column="109" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uofthacks/index/sentimentAnalysis.py">
+    <entry file="file://$PROJECT_DIR$/backend/uofthacks/indexx/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <marker date="1547927256444" expanded="true" signature="238:653" ph="..." />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
