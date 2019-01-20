@@ -12,7 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/styles";
 import DrawerMenu from "./components/DrawerMenu";
 import { Router } from "@reach/router";
-import Trend from './components/Trend';
+import Trend from "./components/Trend";
 const drawerWidth = 240;
 
 const useStyles = makeStyles(
@@ -21,20 +21,20 @@ const useStyles = makeStyles(
       display: "flex"
     },
     drawer: {
-      [theme.breakpoints.up("sm")]: {
+      [theme.breakpoints.up("md")]: {
         width: drawerWidth,
         flexShrink: 0
       }
     },
     appBar: {
       marginLeft: drawerWidth,
-      [theme.breakpoints.up("sm")]: {
+      [theme.breakpoints.up("md")]: {
         width: `calc(100% - ${drawerWidth}px)`
       }
     },
     menuButton: {
       marginRight: 20,
-      [theme.breakpoints.up("sm")]: {
+      [theme.breakpoints.up("md")]: {
         display: "none"
       }
     },
@@ -64,7 +64,7 @@ const TrendHeader = props => (
   </Typography>
 );
 
-const Main  = (props) => {
+const Main = props => {
   const { container } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -113,7 +113,7 @@ const Main  = (props) => {
             <DrawerMenu classes={classes} />
           </Drawer>
         </Hidden>
-        <Hidden xsDown implementation="css">
+        <Hidden smDown implementation="css">
           <Drawer
             classes={{
               paper: classes.drawerPaper
@@ -134,7 +134,7 @@ const Main  = (props) => {
       </main>
     </div>
   );
-}
+};
 
 Main.propTypes = {
   // Injected by the documentation to work in an iframe.
